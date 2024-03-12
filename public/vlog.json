@@ -1,0 +1,53 @@
+[
+    {
+      "id": "12345",
+      "cover": "https://i.ibb.co/LrR6Nf5/9281543.jpg",
+      "title": "The Mystery of the Sapphire Gem",
+      "author": "Eleanor Smith",
+      "author_img": "https://i.ibb.co/q59XB9s/girl-library.jpg",
+      "posted_date": "2024-03-12",
+      "reading_time": 25,
+      "hashtags": ["mystery", "adventure", "fiction"]
+    },
+    {
+      "id": "67890",
+      "cover": "https://i.ibb.co/LrR6Nf5/9281543.jpg",
+      "title": "Secrets of the Enchanted Forest",
+      "author": "Samuel Johnson",
+      "author_img": "https://i.ibb.co/q59XB9s/girl-library.jpg",
+      "posted_date": "2024-03-11",
+      "reading_time": 30,
+      "hashtags": ["fantasy", "magic", "adventure"]
+    },
+    {
+      "id": "24680",
+      "cover": "https://i.ibb.co/LrR6Nf5/9281543.jpg",
+      "title": "The Haunted Mansion",
+      "author": "Jessica Brown",
+      "author_img": "https://i.ibb.co/q59XB9s/girl-library.jpg",
+      "posted_date": "2024-03-10",
+      "reading_time": 20,
+      "hashtags": ["horror", "mystery", "ghosts"]
+    },
+    {
+      "id": "13579",
+      "cover": "https://i.ibb.co/LrR6Nf5/9281543.jpg",
+      "title": "Space Explorers: The Quest for the Unknown",
+      "author": "Michael Thompson",
+      "author_img": "https://i.ibb.co/q59XB9s/girl-library.jpg",
+      "posted_date": "2024-03-09",
+      "reading_time": 35,
+      "hashtags": ["science fiction", "space", "adventure"]
+    },
+    {
+      "id": "54321",
+      "cover": "https://i.ibb.co/LrR6Nf5/9281543.jpg",
+      "title": "The Lost Treasure of Atlantis",
+      "author": "Emily Clark",
+      "author_img": "https://i.ibb.co/q59XB9s/girl-library.jpg",
+      "posted_date": "2024-03-08",
+      "reading_time": 28,
+      "hashtags": ["adventure", "mystery", "legend"]
+    }
+  ]
+  
