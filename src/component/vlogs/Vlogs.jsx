@@ -11,8 +11,8 @@ const Vlogs = () => {
         .then(data=>setVlogs(data))
     },[])
     return (
-        <div>
-            
+        <div className="w-2/3">
+          <h1 className="text-4xl">Blogs:{vlogs.length} </h1>  
         </div>
     );
 };
