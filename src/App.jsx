@@ -8,11 +8,17 @@ import Vlogs from './component/vlogs/Vlogs'
 
 function App() {
   const [bookmarks, setBookmarks]=useState([]);
+  const [readingtime, setReadingtime]=useState(0);
 
   const handleAddToBookmarks =vlog=>{
     const newBookmarks = [...bookmarks, vlog];
     setBookmarks(newBookmarks)
 
+  }
+
+  const handleMarkAsRead = time=>{
+    const newReadingTime = readingtime+time;
+    setReadingtime(newReadingTime)
   }
  
 
@@ -22,8 +28,9 @@ function App() {
      <Header></Header>
      <div className='md:flex max-w-7xl mx-auto'>
      <Vlogs
-     handleAddToBookmarks={handleAddToBookmarks}></Vlogs>
-     <Bookmarks bookmarks={bookmarks}></Bookmarks>
+     handleAddToBookmarks={handleAddToBookmarks} 
+     handleMarkAsRead={handleMarkAsRead}></Vlogs>
+     <Bookmarks bookmarks={bookmarks} readingtime={readingtime}></Bookmarks>
      </div>
       
     </>

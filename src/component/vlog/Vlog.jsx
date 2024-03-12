@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import { FaBookmark} from "react-icons/fa"
 
-const Vlog = ({vlog, handleAddToBookmarks}) => {
+const Vlog = ({vlog, handleAddToBookmarks, handleMarkAsRead}) => {
     const {title, cover, author, author_img, posted_date, reading_time, hashtags}=vlog
     console.log(vlog)
     return (
-        <div >
+        <div className=' mb-20 space-y-4'>
             <img className='w-full mb-6' src={cover} alt={`cover picture of the title ${title}`} />
             <div className='flex justify-between mb-6'>
             <div className='flex'>
@@ -28,13 +28,15 @@ const Vlog = ({vlog, handleAddToBookmarks}) => {
                     hashtags.map((hash, idx)=><span key={idx}><a href="">#{hash}</a></span>)
                 }
             </p>
+            <button className='text-xl text-purple-700 underline' onClick={()=>handleMarkAsRead( reading_time)}>Mark As Read</button>
         </div>
     );
 };
 
 Vlog.propTypes = {
     vlog: PropTypes.object.isRequired,
-    handleAddToBookmarks: PropTypes.func.isRequired
+    handleAddToBookmarks: PropTypes.func.isRequired,
+    handleMarkAsRead: PropTypes.func
 }
 
 export default Vlog;

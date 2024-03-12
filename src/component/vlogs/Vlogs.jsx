@@ -3,7 +3,7 @@ import { useState } from "react";
 import Vlog from "../vlog/Vlog";
 import PropTypes from 'prop-types';
 
-const Vlogs = ({handleAddToBookmarks}) => {
+const Vlogs = ({handleAddToBookmarks, handleMarkAsRead}) => {
 
     const [vlogs, setVlogs]= useState([]);
     useEffect(()=>{
@@ -17,6 +17,7 @@ const Vlogs = ({handleAddToBookmarks}) => {
           {
             vlogs.map(vlog=><Vlog key={vlog.id}
             handleAddToBookmarks={handleAddToBookmarks}
+            handleMarkAsRead={handleMarkAsRead}
             vlog={vlog}></Vlog>)
           } 
         </div>
@@ -24,7 +25,8 @@ const Vlogs = ({handleAddToBookmarks}) => {
 };
 
 Vlogs.propTypes ={
-    handleAddToBookmarks:PropTypes.func
+    handleAddToBookmarks:PropTypes.func,
+    handleMarkAsRead:PropTypes.func
 }
 
 export default Vlogs;
